@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recursos de Aula - Prof. Seu Nome</title>
+    <style>
+        /* Estilos globais e reset simples */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f6f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Cabecalho / Header */
+        header {
+            background-color: #1a365d;
+            color: white;
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 1.5rem;
+            font-weight: 500;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero / Destaque */
+        .hero {
+            background: linear-gradient(135deg, #2b6cb0, #1a365d);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Conteudo Principal / Secoes */
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section-title {
+            margin-bottom: 1.5rem;
+            color: #1a365d;
+            border-bottom: 2px solid #e2e8f0;
+            padding-bottom: 0.5rem;
+        }
+
+        /* Cards de Materiais */
+        .grid-recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5deg);
+        }
+
+        .card h3 {
+            color: #2b6cb0;
+            margin-bottom: 0.5rem;
+        }
+
+        .card p {
+            font-size: 0.95rem;
+            color: #4a5568;
+            margin-bottom: 1rem;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #319795;
+            color: white;
+            padding: 0.5rem 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        .btn:hover {
+            background-color: #2c7a7b;
+        }
+
+        /* Rodape / Footer */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background-color: #e2e8f0;
+            color: #4a5568;
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 1. CABEÇALHO -->
+    <header>
+        <h1>Portal de Recursos</h1>
+        <nav>
+            <a href="#materiais">Materiais</a>
+            <a href="#avisos">Avisos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <!-- 2. HERO / DESTAQUE -->
+    <section class="hero">
+        <h2>Bem-vindo à nossa Sala Virtual</h2>
+        <p>Acesse slides, listas de exercícios e materiais complementares das nossas aulas.</p>
+    </section>
+
+    <!-- 3. CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- Seção de Recursos de Aula -->
+        <section id="materiais">
+            <h2 class="section-title">Materiais de Aula</h2>
+            <div class="grid-recursos">
+                
+                <div class="card">
+                    <h3>Aula 01 - Introdução</h3>
+                    <p>Apresentação dos conceitos básicos, ementa da disciplina e bibliografia.</p>
+                    <a href="#" class="btn">Baixar PDF</a>
+                </div>
+
+                <div class="card">
+                    <h3>Lista de Exercícios #1</h3>
+                    <p>Atividades para fixação dos temas abordados no primeiro módulo.</p>
+                    <a href="#" class="btn">Baixar PDF</a>
+                </div>
+
+                <div class="card">
+                    <h3>Links Complementares</h3>
+                    <p>Seleção de artigos e vídeos recomendados para aprofundamento.</p>
+                    <a href="#" class="btn">Acessar Links</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Seção de Avisos -->
+        <section id="avisos">
+            <h2 class="section-title">Quadro de Avisos</h2>
+            <div class="card">
+                <h3>Entrega do Trabalho 1</h3>
+                <p>Lembrete: O trabalho em grupo deve ser entregue até a próxima sexta-feira via e-mail.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- 4. RODAPÉ -->
+    <footer id="contato">
+        <p>&copy; 2026 - Disciplina de Recursos Educacionais | Contato: professor@email.com</p>
+    </footer>
+
+</body>
+</html>
